@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/littsk/Desktop/SensorCollect/build",
+  "command": "/usr/bin/g++  -I/home/littsk/Desktop/SensorCollect/tool/include -g -o CMakeFiles/sensor_collect.dir/main.cpp.o -c /home/littsk/Desktop/SensorCollect/main.cpp",
+  "file": "/home/littsk/Desktop/SensorCollect/main.cpp"
+},
+{
+  "directory": "/home/littsk/Desktop/SensorCollect/build/tool",
+  "command": "/usr/bin/g++  -I/home/littsk/Desktop/SensorCollect/tool/include -g -o CMakeFiles/uart.dir/src/uart.cpp.o -c /home/littsk/Desktop/SensorCollect/tool/src/uart.cpp",
+  "file": "/home/littsk/Desktop/SensorCollect/tool/src/uart.cpp"
+},
+{
+  "directory": "/home/littsk/Desktop/SensorCollect/build/tool",
+  "command": "/usr/bin/g++  -I/home/littsk/Desktop/SensorCollect/tool/include -g -o CMakeFiles/crc.dir/src/crc.cpp.o -c /home/littsk/Desktop/SensorCollect/tool/src/crc.cpp",
+  "file": "/home/littsk/Desktop/SensorCollect/tool/src/crc.cpp"
+}
+]

@@ -1,0 +1,7 @@
+/home/littsk/Desktop/SensorCollect/build/CMakeFiles/sensor_collect.dir
+/home/littsk/Desktop/SensorCollect/build/CMakeFiles/edit_cache.dir
+/home/littsk/Desktop/SensorCollect/build/CMakeFiles/rebuild_cache.dir
+/home/littsk/Desktop/SensorCollect/build/tool/CMakeFiles/uart.dir
+/home/littsk/Desktop/SensorCollect/build/tool/CMakeFiles/crc.dir
+/home/littsk/Desktop/SensorCollect/build/tool/CMakeFiles/edit_cache.dir
+/home/littsk/Desktop/SensorCollect/build/tool/CMakeFiles/rebuild_cache.dir
