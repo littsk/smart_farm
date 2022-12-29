@@ -94,6 +94,7 @@ sensor_collect: CMakeFiles/sensor_collect.dir/main.cpp.o
 sensor_collect: CMakeFiles/sensor_collect.dir/build.make
 sensor_collect: tool/libuart.a
 sensor_collect: tool/libcrc.a
+sensor_collect: tool/liblog.a
 sensor_collect: CMakeFiles/sensor_collect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sensor_collect"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_collect.dir/link.txt --verbose=$(VERBOSE)

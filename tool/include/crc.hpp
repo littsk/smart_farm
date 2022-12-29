@@ -1,3 +1,6 @@
+#ifndef CRC_HPP
+#define CRC_HPP
+
 #include <iostream>
 
 namespace CRC{
@@ -11,4 +14,6 @@ namespace CRC{
     uint16_t reverse16(uint16_t data);
     uint8_t reverse8(uint8_t data);
 }
+
+#endif
 

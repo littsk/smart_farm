@@ -75,6 +75,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "crc::@3475fea270df04150876"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "log::@3475fea270df04150876"
 		}
 	],
 	"id" : "sensor_collect::@6890427a1f51a3e7e1df",
@@ -98,6 +102,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "tool/libcrc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "tool/liblog.a",
 				"role" : "libraries"
 			}
 		],

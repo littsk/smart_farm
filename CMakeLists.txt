@@ -6,5 +6,5 @@ add_executable(sensor_collect main.cpp)
 
 add_subdirectory(tool)
 
-target_link_libraries(sensor_collect PUBLIC uart crc)
+target_link_libraries(sensor_collect PUBLIC uart crc log)
 target_include_directories(sensor_collect PUBLIC tool/include)

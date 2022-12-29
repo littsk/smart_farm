@@ -1,4 +1,6 @@
 add_library(uart src/uart.cpp)
 add_library(crc src/crc.cpp)
+add_library(log src/log.cpp)
+target_include_directories(log PUBLIC include)
 target_include_directories(uart PUBLIC include)
 target_include_directories(crc PUBLIC include)

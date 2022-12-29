@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/sensor_collect.dir/main.cpp.o -o sensor_collect  tool/libuart.a tool/libcrc.a 
+/usr/bin/g++ -g CMakeFiles/sensor_collect.dir/main.cpp.o -o sensor_collect  tool/libuart.a tool/libcrc.a tool/liblog.a 

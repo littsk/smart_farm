@@ -155,6 +155,19 @@ crc/fast:
 	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/build
 .PHONY : crc/fast
 
+#=============================================================================
+# Target rules for targets named log
+
+# Build rule for target.
+log: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 log
+.PHONY : log
+
+# fast build rule for target.
+log/fast:
+	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/build
+.PHONY : log/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -188,6 +201,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... crc"
+	@echo "... log"
 	@echo "... sensor_collect"
 	@echo "... uart"
 	@echo "... main.o"

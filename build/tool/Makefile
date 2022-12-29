@@ -144,6 +144,20 @@ crc/fast:
 	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/build
 .PHONY : crc/fast
 
+# Convenience name for target.
+tool/CMakeFiles/log.dir/rule:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/log.dir/rule
+.PHONY : tool/CMakeFiles/log.dir/rule
+
+# Convenience name for target.
+log: tool/CMakeFiles/log.dir/rule
+.PHONY : log
+
+# fast build rule for target.
+log/fast:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/build
+.PHONY : log/fast
+
 src/crc.o: src/crc.cpp.o
 .PHONY : src/crc.o
 
@@ -167,6 +181,30 @@ src/crc.s: src/crc.cpp.s
 src/crc.cpp.s:
 	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/src/crc.cpp.s
 .PHONY : src/crc.cpp.s
+
+src/log.o: src/log.cpp.o
+.PHONY : src/log.o
+
+# target to build an object file
+src/log.cpp.o:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/src/log.cpp.o
+.PHONY : src/log.cpp.o
+
+src/log.i: src/log.cpp.i
+.PHONY : src/log.i
+
+# target to preprocess a source file
+src/log.cpp.i:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/src/log.cpp.i
+.PHONY : src/log.cpp.i
+
+src/log.s: src/log.cpp.s
+.PHONY : src/log.s
+
+# target to generate assembly for a file
+src/log.cpp.s:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/src/log.cpp.s
+.PHONY : src/log.cpp.s
 
 src/uart.o: src/uart.cpp.o
 .PHONY : src/uart.o
@@ -201,10 +239,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... crc"
+	@echo "... log"
 	@echo "... uart"
 	@echo "... src/crc.o"
 	@echo "... src/crc.i"
 	@echo "... src/crc.s"
+	@echo "... src/log.o"
+	@echo "... src/log.i"
+	@echo "... src/log.s"
 	@echo "... src/uart.o"
 	@echo "... src/uart.i"
 	@echo "... src/uart.s"

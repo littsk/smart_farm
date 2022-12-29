@@ -48,4 +48,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sensor_collect.dir/DependInfo.cmake"
   "tool/CMakeFiles/uart.dir/DependInfo.cmake"
   "tool/CMakeFiles/crc.dir/DependInfo.cmake"
+  "tool/CMakeFiles/log.dir/DependInfo.cmake"
   )
