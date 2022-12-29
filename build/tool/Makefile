@@ -131,20 +131,6 @@ uart/fast:
 .PHONY : uart/fast
 
 # Convenience name for target.
-tool/CMakeFiles/crc.dir/rule:
-	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/crc.dir/rule
-.PHONY : tool/CMakeFiles/crc.dir/rule
-
-# Convenience name for target.
-crc: tool/CMakeFiles/crc.dir/rule
-.PHONY : crc
-
-# fast build rule for target.
-crc/fast:
-	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/build
-.PHONY : crc/fast
-
-# Convenience name for target.
 tool/CMakeFiles/log.dir/rule:
 	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/log.dir/rule
 .PHONY : tool/CMakeFiles/log.dir/rule
@@ -158,29 +144,19 @@ log/fast:
 	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/build
 .PHONY : log/fast
 
-src/crc.o: src/crc.cpp.o
-.PHONY : src/crc.o
+# Convenience name for target.
+tool/CMakeFiles/tcp.dir/rule:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/tcp.dir/rule
+.PHONY : tool/CMakeFiles/tcp.dir/rule
 
-# target to build an object file
-src/crc.cpp.o:
-	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/src/crc.cpp.o
-.PHONY : src/crc.cpp.o
+# Convenience name for target.
+tcp: tool/CMakeFiles/tcp.dir/rule
+.PHONY : tcp
 
-src/crc.i: src/crc.cpp.i
-.PHONY : src/crc.i
-
-# target to preprocess a source file
-src/crc.cpp.i:
-	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/src/crc.cpp.i
-.PHONY : src/crc.cpp.i
-
-src/crc.s: src/crc.cpp.s
-.PHONY : src/crc.s
-
-# target to generate assembly for a file
-src/crc.cpp.s:
-	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/src/crc.cpp.s
-.PHONY : src/crc.cpp.s
+# fast build rule for target.
+tcp/fast:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/build
+.PHONY : tcp/fast
 
 src/log.o: src/log.cpp.o
 .PHONY : src/log.o
@@ -205,6 +181,30 @@ src/log.s: src/log.cpp.s
 src/log.cpp.s:
 	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/src/log.cpp.s
 .PHONY : src/log.cpp.s
+
+src/tcp.o: src/tcp.cpp.o
+.PHONY : src/tcp.o
+
+# target to build an object file
+src/tcp.cpp.o:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/src/tcp.cpp.o
+.PHONY : src/tcp.cpp.o
+
+src/tcp.i: src/tcp.cpp.i
+.PHONY : src/tcp.i
+
+# target to preprocess a source file
+src/tcp.cpp.i:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/src/tcp.cpp.i
+.PHONY : src/tcp.cpp.i
+
+src/tcp.s: src/tcp.cpp.s
+.PHONY : src/tcp.s
+
+# target to generate assembly for a file
+src/tcp.cpp.s:
+	cd /home/littsk/Desktop/SensorCollect/build && $(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/src/tcp.cpp.s
+.PHONY : src/tcp.cpp.s
 
 src/uart.o: src/uart.cpp.o
 .PHONY : src/uart.o
@@ -238,15 +238,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... crc"
 	@echo "... log"
+	@echo "... tcp"
 	@echo "... uart"
-	@echo "... src/crc.o"
-	@echo "... src/crc.i"
-	@echo "... src/crc.s"
 	@echo "... src/log.o"
 	@echo "... src/log.i"
 	@echo "... src/log.s"
+	@echo "... src/tcp.o"
+	@echo "... src/tcp.i"
+	@echo "... src/tcp.s"
 	@echo "... src/uart.o"
 	@echo "... src/uart.i"
 	@echo "... src/uart.s"

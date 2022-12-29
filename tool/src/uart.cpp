@@ -48,8 +48,6 @@ int uart::open_port(const char * file_pth){
     if(fd == -1){
         throw uart::error("comport didn't exist");
     }
-
-    printf("fd_open=%d\n", fd);
     return fd;
 }
 
@@ -142,6 +140,6 @@ switch( nSpeed )
         throw uart::error("com set error"); 
         return -1; 
     } 
-    printf("set done!\n"); 
+    printf("uart open!\n"); 
     return 0; 
 } 

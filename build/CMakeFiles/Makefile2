@@ -81,8 +81,8 @@ clean: tool/clean
 
 # Recursive "all" directory target.
 tool/all: tool/CMakeFiles/uart.dir/all
-tool/all: tool/CMakeFiles/crc.dir/all
 tool/all: tool/CMakeFiles/log.dir/all
+tool/all: tool/CMakeFiles/tcp.dir/all
 .PHONY : tool/all
 
 # Recursive "preinstall" directory target.
@@ -91,8 +91,8 @@ tool/preinstall:
 
 # Recursive "clean" directory target.
 tool/clean: tool/CMakeFiles/uart.dir/clean
-tool/clean: tool/CMakeFiles/crc.dir/clean
 tool/clean: tool/CMakeFiles/log.dir/clean
+tool/clean: tool/CMakeFiles/tcp.dir/clean
 .PHONY : tool/clean
 
 #=============================================================================
@@ -100,11 +100,11 @@ tool/clean: tool/CMakeFiles/log.dir/clean
 
 # All Build rule for target.
 CMakeFiles/sensor_collect.dir/all: tool/CMakeFiles/uart.dir/all
-CMakeFiles/sensor_collect.dir/all: tool/CMakeFiles/crc.dir/all
 CMakeFiles/sensor_collect.dir/all: tool/CMakeFiles/log.dir/all
+CMakeFiles/sensor_collect.dir/all: tool/CMakeFiles/tcp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_collect.dir/build.make CMakeFiles/sensor_collect.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_collect.dir/build.make CMakeFiles/sensor_collect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=5,6 "Built target sensor_collect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=3,4 "Built target sensor_collect"
 .PHONY : CMakeFiles/sensor_collect.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,39 +150,13 @@ tool/CMakeFiles/uart.dir/clean:
 .PHONY : tool/CMakeFiles/uart.dir/clean
 
 #=============================================================================
-# Target rules for target tool/CMakeFiles/crc.dir
-
-# All Build rule for target.
-tool/CMakeFiles/crc.dir/all:
-	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/depend
-	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=1,2 "Built target crc"
-.PHONY : tool/CMakeFiles/crc.dir/all
-
-# Build rule for subdir invocation for target.
-tool/CMakeFiles/crc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/littsk/Desktop/SensorCollect/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/crc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/littsk/Desktop/SensorCollect/build/CMakeFiles 0
-.PHONY : tool/CMakeFiles/crc.dir/rule
-
-# Convenience name for target.
-crc: tool/CMakeFiles/crc.dir/rule
-.PHONY : crc
-
-# clean rule for target.
-tool/CMakeFiles/crc.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/clean
-.PHONY : tool/CMakeFiles/crc.dir/clean
-
-#=============================================================================
 # Target rules for target tool/CMakeFiles/log.dir
 
 # All Build rule for target.
 tool/CMakeFiles/log.dir/all:
 	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/depend
 	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=3,4 "Built target log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=1,2 "Built target log"
 .PHONY : tool/CMakeFiles/log.dir/all
 
 # Build rule for subdir invocation for target.
@@ -200,6 +174,32 @@ log: tool/CMakeFiles/log.dir/rule
 tool/CMakeFiles/log.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/clean
 .PHONY : tool/CMakeFiles/log.dir/clean
+
+#=============================================================================
+# Target rules for target tool/CMakeFiles/tcp.dir
+
+# All Build rule for target.
+tool/CMakeFiles/tcp.dir/all:
+	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/depend
+	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littsk/Desktop/SensorCollect/build/CMakeFiles --progress-num=5,6 "Built target tcp"
+.PHONY : tool/CMakeFiles/tcp.dir/all
+
+# Build rule for subdir invocation for target.
+tool/CMakeFiles/tcp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/littsk/Desktop/SensorCollect/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tool/CMakeFiles/tcp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/littsk/Desktop/SensorCollect/build/CMakeFiles 0
+.PHONY : tool/CMakeFiles/tcp.dir/rule
+
+# Convenience name for target.
+tcp: tool/CMakeFiles/tcp.dir/rule
+.PHONY : tcp
+
+# clean rule for target.
+tool/CMakeFiles/tcp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/clean
+.PHONY : tool/CMakeFiles/tcp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

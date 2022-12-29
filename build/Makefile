@@ -143,19 +143,6 @@ uart/fast:
 .PHONY : uart/fast
 
 #=============================================================================
-# Target rules for targets named crc
-
-# Build rule for target.
-crc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crc
-.PHONY : crc
-
-# fast build rule for target.
-crc/fast:
-	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/crc.dir/build.make tool/CMakeFiles/crc.dir/build
-.PHONY : crc/fast
-
-#=============================================================================
 # Target rules for targets named log
 
 # Build rule for target.
@@ -167,6 +154,19 @@ log: cmake_check_build_system
 log/fast:
 	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/log.dir/build.make tool/CMakeFiles/log.dir/build
 .PHONY : log/fast
+
+#=============================================================================
+# Target rules for targets named tcp
+
+# Build rule for target.
+tcp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp
+.PHONY : tcp
+
+# fast build rule for target.
+tcp/fast:
+	$(MAKE) $(MAKESILENT) -f tool/CMakeFiles/tcp.dir/build.make tool/CMakeFiles/tcp.dir/build
+.PHONY : tcp/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -200,9 +200,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... crc"
 	@echo "... log"
 	@echo "... sensor_collect"
+	@echo "... tcp"
 	@echo "... uart"
 	@echo "... main.o"
 	@echo "... main.i"

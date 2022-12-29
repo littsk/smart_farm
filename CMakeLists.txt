@@ -6,5 +6,6 @@ add_executable(sensor_collect main.cpp)
 
 add_subdirectory(tool)
 
-target_link_libraries(sensor_collect PUBLIC uart crc log)
+find_package(OpenCV REQUIRED)
+target_link_libraries(sensor_collect PUBLIC uart log tcp libMVSDK.so ${OpenCV_LIBS})
 target_include_directories(sensor_collect PUBLIC tool/include)
