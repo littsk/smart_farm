@@ -17,6 +17,7 @@
 
 
 int main(int argc, char * argv[]){
+    printf("hello, world");
     uart * port = new uart("/dev/ttyUSB0", 4800, 8, 'N', 1);
     CameraCatchNode * node = new CameraCatchNode();
     node->record("./test1.mp4");
